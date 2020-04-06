@@ -1,0 +1,36 @@
+{
+  "name": "blog-admin-node",
+  "version": "1.0.0",
+  "description": "blog后端接口",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "cross-env NODE_ENV=dev nodemon app.js",
+    "build": "cross-env NODE_ENV=prd nodemon app.js",
+    "prd": "cross-env NODE_ENV=prd pm2 start app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zbxiang/blog-admin-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zbxiang/blog-admin-node/issues"
+  },
+  "homepage": "https://github.com/zbxiang/blog-admin-node#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "boom": "^7.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "node": "^13.12.0",
+    "nodemon": "^2.0.2"
+  }
+}
